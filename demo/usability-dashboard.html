@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usability Test Dashboard</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="usability-dashboard.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -38,11 +39,140 @@
                         <div class="metric-label">tasks</div>
                     </div>
                 </div>
+
+                <!-- task cards grid -->
+                <div class="task-grid">
+                    <!-- task 1 -->
+                    <div class="task-card warning">
+                        <div class="task-badge warning-badge">needs attention</div>
+                        <div class="task-number">task 01</div>
+                        <h3 class="task-title">lorem ipsum dolor sit</h3>
+                        <p class="task-note">found after some searching, took a bit longer than expected</p>
+                        
+                        <div class="task-stats">
+                            <div class="stat-item">
+                                <div class="stat-label">time</div>
+                                <div class="stat-value">4m 23s</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">status</div>
+                                <div class="stat-value" style="font-size: 1rem;">friction</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- task 2 -->
+                    <div class="task-card warning">
+                        <div class="task-badge warning-badge">needs attention</div>
+                        <div class="task-number">task 02</div>
+                        <h3 class="task-title">consectetur adipiscing</h3>
+                        <p class="task-note">button wasn't immediately visible, needed extra clicks</p>
+                        
+                        <div class="task-stats">
+                            <div class="stat-item">
+                                <div class="stat-label">time</div>
+                                <div class="stat-value">3m 47s</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">status</div>
+                                <div class="stat-value" style="font-size: 1rem;">eventually</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- task 3 -->
+                    <div class="task-card success">
+                        <div class="task-badge success-badge">completed</div>
+                        <div class="task-number">task 03</div>
+                        <h3 class="task-title">elit sed do eiusmod</h3>
+                        <p class="task-note">nice and intuitive, worked exactly as expected</p>
+                        
+                        <div class="task-stats">
+                            <div class="stat-item">
+                                <div class="stat-label">time</div>
+                                <div class="stat-value">1m 58s</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">status</div>
+                                <div class="stat-value" style="font-size: 1rem;">perfect</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- task 4 -->
+                    <div class="task-card success">
+                        <div class="task-badge success-badge">completed</div>
+                        <div class="task-number">task 04</div>
+                        <h3 class="task-title">tempor incididunt</h3>
+                        <p class="task-note">straightforward flow, no issues at all</p>
+                        
+                        <div class="task-stats">
+                            <div class="stat-item">
+                                <div class="stat-label">time</div>
+                                <div class="stat-value">2m 14s</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">status</div>
+                                <div class="stat-value" style="font-size: 1rem;">success</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- task 5 -->
+                    <div class="task-card success">
+                        <div class="task-badge success-badge">completed</div>
+                        <div class="task-number">task 05</div>
+                        <h3 class="task-title">ut labore et dolore</h3>
+                        <p class="task-note">really smooth experience, user was impressed</p>
+                        
+                        <div class="task-stats">
+                            <div class="stat-item">
+                                <div class="stat-label">time</div>
+                                <div class="stat-value">1m 42s</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">status</div>
+                                <div class="stat-value" style="font-size: 1rem;">excellent</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- side panel -->
+            <div class="col-lg-3">
+                <div class="side-panel">
+                    <div class="panel-section">
+                        <div class="panel-title">test details</div>
+                        <div class="panel-info">
+                            <strong>project:</strong> lorem platform<br>
+                            <strong>date:</strong> oct 8, 2025<br>
+                            <strong>participant:</strong> user #3<br>
+                            <strong>duration:</strong> 42 min<br>
+                            <strong>tasks:</strong> 5
+                        </div>
+                    </div>
+                    
+                    <div class="panel-section">
+                        <div class="panel-title">researcher</div>
+                        <div class="panel-info">
+                            john doe
+                        </div>
+                    </div>
+                    
+                    <div class="panel-section">
+                        <div class="panel-title">methodology</div>
+                        <div class="panel-info">
+                            task-based testing with think-aloud protocol and sus evaluation
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="usability-dashboard.js"></script>
 </body>
 </html>
 
