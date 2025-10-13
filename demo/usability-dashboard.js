@@ -15,3 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function toggleDetails(button) {
+    const card = button.closest('.task-card');
+    const details = card.querySelector('.task-details');
+    
+    if (details.classList.contains('expanded')) {
+        details.classList.remove('expanded');
+        button.textContent = 'View Details ▼';
+    } else {
+        details.classList.add('expanded');
+        button.textContent = 'Hide Details ▲';
+    }
+}
+
