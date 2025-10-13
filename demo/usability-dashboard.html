@@ -13,13 +13,17 @@
         <div class="container">
             <h1 class="dashboard-title">Usability Test Dashboard</h1>
             <p class="dashboard-subtitle">Testing Session • alphaXiv Platform</p>
+            <div class="test-intro">
+                <p>This dashboard presents findings from a task-based usability study of the alphaXiv platform (alphaxiv.org), conducted on October 4, 2025. Participant 1 completed 5 key tasks using think-aloud protocol, providing insights into navigation patterns, feature discoverability, and overall user experience. Results include task completion times, success rates, and a System Usability Scale (SUS) score of 72.5.</p>
+                <p class="test-meta"><strong>Researcher:</strong> Dmytro K • <strong>Duration:</strong> ~14 minutes • <strong>Method:</strong> moderated remote testing</p>
+            </div>
         </div>
     </div>
 
     <div class="container" style="margin-top: 30px; margin-bottom: 60px;">
         <div class="row">
             <!-- Main Content -->
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <!-- Metrics Bar -->
                 <div class="metrics-bar">
                     <div class="metric-card">
@@ -64,6 +68,19 @@
                                 <div class="stat-value" style="font-size: 1rem;">Eventually</div>
                             </div>
                         </div>
+                        
+                        <button class="view-details-btn" onclick="toggleDetails(this)">View Details ▼</button>
+                        
+                        <div class="task-details">
+                            <div class="task-details-content">
+                                <div class="screenshot-box">
+                                    <img src="../assets/img/usability-diagram.png" alt="Task screenshot" style="max-width: 100%; border-radius: 4px;">
+                                </div>
+                                <p style="color: var(--gray-medium); font-size: 0.9rem; margin-top: 12px;">
+                                    <strong>Issue:</strong> GitHub icon wasn't recognizable to non-technical users. Multiple attempts before discovering the feature.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- task 2 -->
@@ -86,6 +103,19 @@
                             <div class="stat-item">
                                 <div class="stat-label">Status</div>
                                 <div class="stat-value" style="font-size: 1rem;">Friction</div>
+                            </div>
+                        </div>
+                        
+                        <button class="view-details-btn" onclick="toggleDetails(this)">View Details ▼</button>
+                        
+                        <div class="task-details">
+                            <div class="task-details-content">
+                                <div class="screenshot-box">
+                                    <img src="../assets/img/usability-diagram.png" alt="Task screenshot" style="max-width: 100%; border-radius: 4px;">
+                                </div>
+                                <p style="color: var(--gray-medium); font-size: 0.9rem; margin-top: 12px;">
+                                    <strong>Issue:</strong> Sidebar lacks direct join functionality. Users had to navigate to community pages separately.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -112,6 +142,19 @@
                                 <div class="stat-value" style="font-size: 1rem;">Perfect</div>
                             </div>
                         </div>
+                        
+                        <button class="view-details-btn" onclick="toggleDetails(this)">View Details ▼</button>
+                        
+                        <div class="task-details">
+                            <div class="task-details-content">
+                                <div class="screenshot-box">
+                                    <img src="../assets/img/usability-diagram.png" alt="Task screenshot" style="max-width: 100%; border-radius: 4px;">
+                                </div>
+                                <p style="color: var(--gray-medium); font-size: 0.9rem; margin-top: 12px;">
+                                    <strong>Success:</strong> Clear, conventional profile editing interface worked perfectly.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- task 4 -->
@@ -134,6 +177,19 @@
                             <div class="stat-item">
                                 <div class="stat-label">Status</div>
                                 <div class="stat-value" style="font-size: 1rem;">Good</div>
+                            </div>
+                        </div>
+                        
+                        <button class="view-details-btn" onclick="toggleDetails(this)">View Details ▼</button>
+                        
+                        <div class="task-details">
+                            <div class="task-details-content">
+                                <div class="screenshot-box">
+                                    <img src="../assets/img/usability-diagram.png" alt="Task screenshot" style="max-width: 100%; border-radius: 4px;">
+                                </div>
+                                <p style="color: var(--gray-medium); font-size: 0.9rem; margin-top: 12px;">
+                                    <strong>Note:</strong> Found quickly but placement differed from user expectations.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -160,35 +216,18 @@
                                 <div class="stat-value" style="font-size: 1rem;">Perfect</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- side panel -->
-            <div class="col-lg-3">
-                <div class="side-panel">
-                    <div class="panel-section">
-                        <div class="panel-title">Test Details</div>
-                        <div class="panel-info">
-                            <strong>Website:</strong> alphaXiv<br>
-                            <strong>URL:</strong> alphaxiv.org<br>
-                            <strong>Date:</strong> Oct 4, 2025<br>
-                            <strong>Participant:</strong> 1<br>
-                            <strong>Tasks:</strong> 5
-                        </div>
-                    </div>
-                    
-                    <div class="panel-section">
-                        <div class="panel-title">Team Member</div>
-                        <div class="panel-info">
-                            Dmytro K
-                        </div>
-                    </div>
-                    
-                    <div class="panel-section">
-                        <div class="panel-title">Methodology</div>
-                        <div class="panel-info">
-                            Task-based testing with think-aloud protocol and SUS evaluation.
+                        
+                        <button class="view-details-btn" onclick="toggleDetails(this)">View Details ▼</button>
+                        
+                        <div class="task-details">
+                            <div class="task-details-content">
+                                <div class="screenshot-box">
+                                    <img src="../assets/img/usability-diagram.png" alt="Task screenshot" style="max-width: 100%; border-radius: 4px;">
+                                </div>
+                                <p style="color: var(--gray-medium); font-size: 0.9rem; margin-top: 12px;">
+                                    <strong>Success:</strong> AI assistant was instantly recognized and praised as the standout feature.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
